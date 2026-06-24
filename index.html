@@ -1,108 +1,288 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="brand-geraldfuller">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gerald Fuller - Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        header img {
-            border-radius: 50%;
-            max-width: 200px;
-            height: auto;
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-            background-color: #333;
-            padding: 10px 0;
-        }
-        nav a {
-            text-decoration: none;
-            padding: 10px 20px;
-            color: #fff;
-        }
-        nav a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerald Fuller — UAS Systems Engineer</title>
+  <meta name="description" content="Gerald (Jerry) Fuller — UAS Systems Engineer with 10+ years in unmanned systems. Interceptor & strike drone development, research flight test, and Arctic field operations." />
+  <meta name="author" content="Gerald Fuller" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Gerald Fuller — UAS Systems Engineer" />
+  <meta property="og:description" content="10+ years in unmanned systems — interceptor & strike drone development, research flight test, and Arctic field operations." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://geraldfuller.com/" />
+  <meta property="og:image" content="https://geraldfuller.com/profilepic.jpg" />
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <img src="profilepic.jpg" alt="Profile Picture">
-            <h1>Gerald (Jerry) Fuller</h1>
-        </header>
-        <nav>
-            <a href="#">Home</a>
-            <a href="kf0qgk.html">KF0QGK</a>
-        </nav>
-        <section>
-            <h2>About Me</h2>
-            <p>I am a student at the University of North Dakota studying UAS and enjoy design and development.</p>
-        </section>
-        <section>
-            <h2>Contact Information</h2>
-            <ul>
-                <li>Email: <a href="mailto:me@geraldfuller.com">me@geraldfuller.com</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <ul>
-                <li>High School Diploma</li>
-                <li>Bachelor of Science in Aerospace Studies - University of North Dakota (In Progress)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <ul>
-                <li>FAA Part 107</li>
-                <li>Private Pilot Certificate</li>
-                <li>HAM Radio License (callsign KF0QGK)</li>
-                <li>Ardupilot Experience</li>
-                <li>Industry Certified in Fusion 360 and Autodesk Inventor</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Interests</h2>
-            <ul>
-                <li>3D Printing</li>
-                <li>Autonomous Drones</li>
-                <li>HAM Radio</li>
-                <li>RC Cars</li>
-            </ul>
-        </section>
-        <!-- Add sections for Work Experience, Projects or Portfolio, Testimonials, and Links if needed -->
+  <!-- ===================== HEADER ===================== -->
+  <header class="topbar">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Gerald Fuller — home">
+        <img class="bdg" src="assets/logo/geraldfuller-badge.svg" alt="" aria-hidden="true" />
+        <span class="wm"><b>GERALD FULLER</b><small>Design · Electronics · Drones</small></span>
+      </a>
+      <div class="navlinks">
+        <a href="#about" class="hide-sm">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills" class="hide-sm">Skills</a>
+        <a href="kf0qgk.html">KF0QGK</a>
+        <a href="#contact" class="cta">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="badge-chip">Design · Electronics · Drones</span>
+        <h1>Hi, I'm <span class="amber">Jerry</span> Fuller.</h1>
+        <p class="role">UAS Systems Engineer · Maker · Builder</p>
+        <p class="intro">
+          I've spent over a decade around unmanned systems — the last five years
+          working in the industry across research, flight test, and defense. Today I'm a
+          UAS Systems Engineer at <strong>KAZE Drones</strong>, developing interceptor and
+          strike drone solutions. I've operated and built aircraft in some of the harshest
+          conditions in the country, from the Arctic to the field.
+        </p>
+        <div class="actions">
+          <a class="btn btn-amber" href="#work">See my work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="https://github.com/JFullerFPV" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <span class="ring" aria-hidden="true"></span>
+        <img src="profilepic.jpg" alt="Portrait of Gerald (Jerry) Fuller" />
+      </div>
     </div>
+  </section>
+
+  <!-- ===================== STATS ===================== -->
+  <section class="section wrap" aria-label="At a glance">
+    <div class="tiles">
+      <div class="tile"><div class="num">10+ yrs</div><div class="lbl">Unmanned systems</div></div>
+      <div class="tile"><div class="num">5 yrs</div><div class="lbl">In the industry</div></div>
+      <div class="tile"><div class="num">FAA Part 107</div><div class="lbl">Commercial UAS</div></div>
+      <div class="tile"><div class="num">Private Pilot</div><div class="lbl">Certificated</div></div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="section wrap" id="about">
+    <div class="split">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Operator and engineer for unmanned systems.</h2>
+        <p class="lede">
+          For more than ten years I've worked with unmanned aircraft — flying them,
+          integrating their sensors, and engineering the systems that hold a mission
+          together. The last five years have been professional: research flight test,
+          field operations in extreme environments, and now the design of next-generation
+          drone platforms.
+        </p>
+        <p class="lede">
+          I'm currently a UAS Systems Engineer at <strong>KAZE Drones</strong> working on
+          interceptor and strike drone solutions. Before that I designed and built a
+          subscale prototype of a concept business aircraft, and spent several years as an
+          Autonomous Systems Operator at the Research Institute for Autonomous Systems
+          (RIAS) under the University of North Dakota.
+        </p>
+        <a class="btn btn-outline" href="mailto:me@geraldfuller.com">Email me</a>
+      </div>
+      <div class="panel">
+        <h3>What I work on</h3>
+        <ul class="hexlist">
+          <li><strong>UAS systems engineering</strong><span>Interceptor &amp; strike drone development, integration &amp; test.</span></li>
+          <li><strong>Flight operations</strong><span>Mission planning &amp; field ops in extreme environments.</span></li>
+          <li><strong>Sensors &amp; payloads</strong><span>EO/IR, thermal, multispectral, 3D LiDAR &amp; GPR.</span></li>
+          <li><strong>Design &amp; fabrication</strong><span>CAD in Fusion 360 / Inventor, 3D printing, prototyping.</span></li>
+          <li><strong>Amateur radio</strong><span>HF/VHF/UHF, APRS &amp; digital modes — KF0QGK.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== WORK ===================== -->
+  <section class="section wrap" id="work">
+    <p class="eyebrow">Experience</p>
+    <h2>Where I've flown &amp; what I've built</h2>
+    <p class="lede">A decade of unmanned-systems work — from research flight test to field campaigns in the Arctic to next-generation drone development.</p>
+
+    <div class="cards">
+      <!-- Feature: KAZE (current) -->
+      <article class="card feature">
+        <span class="tag">Current · KAZE Drones</span>
+        <h3>UAS Systems Engineer — KAZE Drones</h3>
+        <p>
+          Developing interceptor and strike drone solutions as a systems engineer —
+          working across airframe, integration, and test to turn capability requirements
+          into flyable, mission-ready platforms.
+        </p>
+        <div class="meta">
+          <span>Systems engineering</span><span>Interceptor UAS</span><span>Strike UAS</span><span>Integration &amp; test</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Design · Flight Test</span>
+        <h3>Subscale concept aircraft</h3>
+        <p>
+          Designed and built a subscale prototype of a concept business aircraft —
+          translating a clean-sheet design into a flying testbed for evaluation.
+        </p>
+        <div class="meta"><span>Aircraft design</span><span>Prototyping</span><span>Fabrication</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag">RIAS · UND</span>
+        <h3>Autonomous Systems Operator — RIAS</h3>
+        <p>
+          Several years at the Research Institute for Autonomous Systems supporting a wide
+          range of research: agricultural surveying, NASA UTM, target-aircraft builds, and
+          counter-UAS test &amp; evaluation for federal partners.
+        </p>
+        <div class="meta"><span>Agricultural survey</span><span>NASA UTM</span><span>Target aircraft</span><span>Counter-UAS T&amp;E</span></div>
+      </article>
+
+      <!-- Feature: Alaska campaign -->
+      <article class="card feature">
+        <span class="tag">Flagship · Arctic Field Campaign</span>
+        <h3>Alaska — Arctic infrastructure &amp; permafrost study</h3>
+        <p>
+          The largest project of my time at RIAS: a multi-year field campaign in Alaska for
+          a joint arctic infrastructure and permafrost study supporting the U.S. Army Corps
+          of Engineers. We surveyed the Nome / Teller region and the full lengths of the
+          Steese and Dalton Highways — flying at the peak of winter in January and again in
+          summer.
+        </p>
+        <p>
+          <strong>Aircraft:</strong> DJI M600 · Inspired Flight IF1200A · Parrot ANAFI USA.
+          <strong> Payloads:</strong> electro-optical, infrared, thermal, multispectral,
+          3D LiDAR, and ground-penetrating radar.
+        </p>
+        <div class="meta">
+          <span>Multi-year campaign</span><span>Extreme-cold ops</span><span>LiDAR &amp; GPR</span><span>USACE</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== ON THE BENCH ===================== -->
+  <section class="section wrap" id="bench">
+    <p class="eyebrow">On the bench</p>
+    <h2>Side projects &amp; what's next</h2>
+    <p class="lede">When I'm not in the field, I'm building. More on GitHub.</p>
+    <div class="cards">
+      <article class="card">
+        <span class="tag">AI · Vision</span>
+        <h3>PrinterCam</h3>
+        <p>
+          A 3D-print failure detector that watches the bed through a camera and flags
+          failed prints in real time with a YOLOv11 model — catching a bad print before it
+          wastes hours of filament.
+        </p>
+        <div class="meta"><span>Python</span><span>YOLOv11</span><span>Computer vision</span></div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Future venture</span>
+        <h3>J-Tech</h3>
+        <p>
+          A hardware venture in the works — custom drones, electronics, and power systems.
+          More to come.
+        </p>
+        <div class="meta"><span>Drones</span><span>Electronics</span><span>Coming soon</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section class="section wrap" id="skills">
+    <div class="split">
+      <div>
+        <p class="eyebrow">Skills &amp; credentials</p>
+        <h2>Tools &amp; certifications</h2>
+        <p class="lede">
+          Equal parts software, hardware, and airmanship — the toolkit behind the builds.
+        </p>
+        <a class="btn btn-solid" href="https://github.com/JFullerFPV" target="_blank" rel="noreferrer">See projects on GitHub</a>
+      </div>
+      <div class="panel">
+        <ul class="hexlist">
+          <li><strong>FAA Part 107</strong><span>Commercial small-UAS operations.</span></li>
+          <li><strong>Private Pilot Certificate</strong><span>Crewed aircraft.</span></li>
+          <li><strong>Payload &amp; sensor operations</strong><span>EO/IR, thermal, multispectral, LiDAR, GPR.</span></li>
+          <li><strong>Fusion 360 &amp; Autodesk Inventor</strong><span>Industry certified — CAD &amp; design.</span></li>
+          <li><strong>ArduPilot &amp; mission planning</strong><span>Setup, tuning &amp; system integration.</span></li>
+          <li><strong>Amateur Radio License</strong><span>Callsign KF0QGK.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HAM STRIP ===================== -->
+  <section class="section wrap">
+    <div class="strip">
+      <div>
+        <h3>On the air as <span class="callsign">KF0QGK</span></h3>
+        <p>Station details, gear, and live space-weather &amp; propagation data.</p>
+      </div>
+      <a class="btn btn-amber" href="kf0qgk.html">Open the radio page</a>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section class="section wrap" id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2>Let's build something.</h2>
+    <p class="lede">
+      Questions about a build, a custom pack, a collaboration, or a radio contact? Reach out.
+    </p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </div>
+        <strong>Email</strong>
+        <a href="mailto:me@geraldfuller.com">me@geraldfuller.com</a>
+      </div>
+      <div class="contact-card">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1-.3-3.5 1.3a12 12 0 0 0-6.3 0C6.5 1.1 5.5 1.4 5.5 1.4a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 7.8c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V19"/></svg>
+        </div>
+        <strong>GitHub</strong>
+        <a href="https://github.com/JFullerFPV" target="_blank" rel="noreferrer">JFullerFPV</a>
+      </div>
+      <div class="contact-card">
+        <div class="ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <strong>Amateur Radio</strong>
+        <a href="https://www.qrz.com/db/KF0QGK" target="_blank" rel="noreferrer">KF0QGK on QRZ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <a class="brand reverse" href="index.html" aria-label="Gerald Fuller — home">
+        <img class="bdg" src="assets/logo/geraldfuller-badge-reverse.svg" alt="" aria-hidden="true" />
+        <span class="wm"><b>GERALD FULLER</b><small>Design · Electronics · Drones</small></span>
+      </a>
+      <div class="small">© <span id="year"></span> Gerald (Jerry) Fuller · UAS Systems Engineer · Built with plain HTML/CSS on GitHub Pages</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

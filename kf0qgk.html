@@ -1,78 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="brand-geraldfuller">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KF0QGK - Gerald Fuller</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        header img {
-            border-radius: 50%;
-            max-width: 200px;
-            height: auto;
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 20px;
-            background-color: #333;
-            padding: 10px 0;
-        }
-        nav a {
-            text-decoration: none;
-            padding: 10px 20px;
-            color: #fff;
-        }
-        nav a:hover {
-            background-color: #555;
-            border-radius: 5px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header>
-            <img src="profilepic.jpg" alt="Profile Picture">
-            <h1>Gerald (Jerry) Fuller</h1>
-        </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="#">KF0QGK</a>
-        </nav>
-         <section>
-            <center>
-<iframe src="https://pota-stats.wd4dan.net/?call=KF0QGK" height="1250" width="1000" frameborder="0" scrolling="no"></iframe>
-<a href="https://www.hamqsl.com/solar.html" title="Click to add Solar-Terrestrial Data to your website!"><img src="https://www.hamqsl.com/solar101vhf.php"></a>
-</center>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KF0QGK — Gerald (Jerry) Fuller</title>
+  <meta name="description" content="Amateur radio page for KF0QGK — station, gear, and live propagation / space-weather data. Grand Forks, ND." />
 
-        </section>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ===================== HEADER ===================== -->
+  <header class="topbar">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html" aria-label="Gerald Fuller — home">
+        <img class="bdg" src="assets/logo/geraldfuller-badge.svg" alt="" aria-hidden="true" />
+        <span class="wm"><b>GERALD FULLER</b><small>Design · Electronics · Drones</small></span>
+      </a>
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="index.html#work" class="hide-sm">Work</a>
+        <a href="kf0qgk.html" aria-current="page">KF0QGK</a>
+        <a href="index.html#contact" class="cta">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-inner" style="grid-template-columns:1fr;text-align:left">
+      <div>
+        <span class="badge-chip">Amateur Radio Station</span>
+        <h1><span class="amber mono">KF0QGK</span></h1>
+        <p class="role">Grand Forks, North Dakota</p>
+        <p class="intro">
+          My amateur radio station — HF, VHF/UHF, APRS, and digital modes. Below you'll find
+          my gear, where to find me online, and live space-weather &amp; propagation data.
+        </p>
+        <div class="actions">
+          <a class="btn btn-amber" href="#widgets">Propagation</a>
+          <a class="btn btn-ghost" href="#station">Station</a>
+          <a class="btn btn-ghost" href="https://www.qrz.com/db/KF0QGK" target="_blank" rel="noreferrer">QRZ</a>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- ===================== CONTENT ===================== -->
+  <section class="section wrap">
+    <div class="cards">
+
+      <article class="card" id="station">
+        <span class="tag">Station</span>
+        <h3>Gear &amp; antennas</h3>
+        <ul class="hexlist">
+          <li><strong>Callsign</strong><span>KF0QGK</span></li>
+          <li><strong>Location</strong><span>Grand Forks, ND</span></li>
+          <li><strong>Primary HF rig</strong><span>Xiegu G90</span></li>
+          <li><strong>HF antennas</strong><span>EFHW or 10 m DIY dipole</span></li>
+          <li><strong>Vehicle rig</strong><span>Anytone UV-778 (FM) · APRS/data via DigiRig Mobile (homemade adapter cable)</span></li>
+          <li><strong>Primary handheld</strong><span>Yaesu FT-5DR + SignalStuff Signal Stick</span></li>
+          <li><strong>Other handhelds</strong><span>TIDRADIO H3 &amp; H8 + Nagoya dual-band antennas</span></li>
+        </ul>
+      </article>
+
+      <article class="card" id="notes">
+        <span class="tag">Operating</span>
+        <h3>Bands &amp; modes</h3>
+        <ul class="hexlist">
+          <li><strong>HF bands</strong><span>10 m, 20 m, 40 m</span></li>
+          <li><strong>HF modes</strong><span>FT8, SSB</span></li>
+          <li><strong>VHF/UHF</strong><span>FM voice, APRS, digital</span></li>
+          <li><strong>Preferred</strong><span>Grand Forks region repeaters</span></li>
+        </ul>
+        <a class="link" href="https://www.qrz.com/db/KF0QGK" target="_blank" rel="noreferrer">KF0QGK on QRZ →</a>
+      </article>
+
+      <article class="card feature" id="widgets">
+        <span class="tag">Live data</span>
+        <h3>Propagation &amp; space weather</h3>
+        <p>Live images below are loaded from public ham widgets (hamqsl.com).</p>
+        <div class="widget">
+          <img src="https://www.hamqsl.com/solar101vhf.php" alt="Solar and VHF propagation conditions" loading="lazy" />
+          <div class="cap">Solar / VHF conditions — hamqsl</div>
+        </div>
+        <div class="widget">
+          <img src="https://www.hamqsl.com/solarmuf.php" alt="Maximum usable frequency map" loading="lazy" />
+          <div class="cap">MUF map — hamqsl</div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <a class="brand reverse" href="index.html" aria-label="Gerald Fuller — home">
+        <img class="bdg" src="assets/logo/geraldfuller-badge-reverse.svg" alt="" aria-hidden="true" />
+        <span class="wm"><b>GERALD FULLER</b><small>Design · Electronics · Drones</small></span>
+      </a>
+      <div class="small">© <span id="year"></span> Gerald (Jerry) Fuller · <span class="mono">KF0QGK</span> · Grand Forks, ND</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
